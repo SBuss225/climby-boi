@@ -19,5 +19,8 @@ class TestClimbyBoi(unittest.TestCase):
     boi.get_valid_x_handholds("left_hand", test_wall)
     boi.get_valid_y_handholds("left_hand", test_wall)
 
+    boi.find_new_handhold("left_hand", test_wall)
+    boi.run_greedy(test_wall)
+
 if __name__=='__main__':
   unittest.main()
